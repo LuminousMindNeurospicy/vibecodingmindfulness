@@ -854,10 +854,18 @@
         display: none;
         flex-direction: column;
         cursor: pointer;
-        padding: 0.5em;
-        border: none;
-        background: transparent;
-        gap: 4px;
+        padding: 0.8em;
+        border: 2px solid;
+        background: rgba(255, 0, 128, 0.1);
+        gap: 5px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-toggle:hover {
+        background: rgba(255, 0, 128, 0.2);
+        box-shadow: 0 0 20px rgba(255, 0, 128, 0.6);
+        transform: scale(1.05);
       }
 
       .nav-toggle span {
@@ -920,13 +928,15 @@
           right: 0;
           flex-direction: column;
           backdrop-filter: blur(20px);
-          border-bottom: 1px solid;
+          background: rgba(0, 0, 17, 0.95);
+          border-bottom: 2px solid;
           padding: 2em 5%;
           gap: 1em;
           transform: translateY(-100%);
           opacity: 0;
           visibility: hidden;
           transition: all 0.3s ease;
+          box-shadow: 0 10px 30px rgba(255, 0, 255, 0.3);
         }
 
         .nav-menu.active {
@@ -1127,7 +1137,7 @@
             <li>La elegancia del minimalismo zen aplicada a lógica.</li>
             <li>El reconocimiento de que error y belleza conviven.</li>
             <li>
-              El código como poes����a funcional —claro, preciso, consciente.
+              El código como poesía funcional —claro, preciso, consciente.
             </li>
           </ul>
           <p>
@@ -1206,7 +1216,7 @@
               </p>
               <p>
                 <strong
-                  >Yo puedo despertar. Aqu��. Ahora. Con glitter en los
+                  >Yo puedo despertar. Aquí. Ahora. Con glitter en los
                   dedos.</strong
                 >
               </p>
@@ -1617,17 +1627,6 @@
             />
             <div class="gallery-fallback" style="display: none">🌸</div>
             <p class="gallery-caption">El arte del flujo atento</p>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="https://raw.githubusercontent.com/LuminousMindNeurospicy/vibecodingmindfulness/refs/heads/main/1vc%20(3).jpg"
-              alt="Vibe Coding Session 3"
-              class="gallery-image"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-            />
-            <div class="gallery-fallback" style="display: none">🎯</div>
-            <p class="gallery-caption">Presencia digital pura</p>
-          </div>
         </div>
       </section>
       <section class="why-section" id="why-section">
@@ -2200,7 +2199,7 @@
           if (b) {
             var d = b.createElement("script");
             d.innerHTML =
-              "window.__CF$cv$params={r:'9ba9819435bfeef2',t:'MTc2Nzg1MjM1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'9c187e6644aea5ad',t:'MTc2OTAxNjE0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
