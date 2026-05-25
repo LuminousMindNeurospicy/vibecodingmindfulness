@@ -484,12 +484,12 @@
       }
 
       .puya-stage-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 3%;
-        gap: 2%;
-      }
-
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3%;
+  gap: 12px;
+  flex-wrap: wrap;
+}
       .puya-stage-number {
         font-size: 1.8em;
         font-weight: bold;
@@ -498,10 +498,11 @@
       }
 
       .puya-stage-title {
-        font-size: 1.3em;
-        font-weight: bold;
-        flex: 1;
-      }
+  font-size: 1.3em;
+  font-weight: bold;
+  flex: 1 1 180px;
+  min-width: 0;
+}
 
       .puya-stage-arrow {
         font-size: 1.5em;
